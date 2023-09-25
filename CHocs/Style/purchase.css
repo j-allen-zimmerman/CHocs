@@ -1,0 +1,91 @@
+.purchaseheader{
+    background-color: #4A756E;
+}
+
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} */
+/* body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+} */
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 80%;
+    background-color: transparent;
+    padding: 100px;  
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.userdetail{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-direction: column; */
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.kotakkonten{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    padding: 10px;
+}
+
+.userdetail .kotakkonten input{
+    width: 100%;
+    height: 30px;
+    /* border-radius: 5px; */
+}
+
+form .button{
+    margin: 45px 0px;
+    height: 50px;
+    width: 100px;
+    font-family: myFirstFont;
+
+}
+
+.button input{
+    width: 100%;
+    height: 100%;
+
+}
+.konten{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 50%;
+    padding: 10px;
+    /* align-items: center; */
+}
+.kotakbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+input[type=Submit]{
+    font-family: myFirstFont;
+}

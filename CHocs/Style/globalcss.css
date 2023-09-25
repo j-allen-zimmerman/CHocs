@@ -1,0 +1,262 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./font/Alatsi-Regular.ttf);
+}
+.sidebar {
+  text-align: center;
+  font-family: myFirstFont;
+  height: 100%; /* Tinggi Penuh 100% */
+  width: 0; /* lebar 0 - ubah ini dengan JavaScript */
+  position: fixed; /* Stay ditempat */
+  z-index: 1; /* Stay diatas */
+  top: 0;
+  left: 0;
+  background-color: #1B4B43; /* Hitam */
+  overflow-x: hidden; /* Nonaktifkan horizontal scroll */
+  padding-top: 20px; /* Tempatkan konten 60px dari atas */
+  transition: 0.5s; /* Efek transisi 0,5 detik untuk meluncur di sidebar */
+}
+
+/* Link sidebar */
+.sidebar a {
+  padding: 6px 8px 6px 18px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 49px;
+}
+
+.imglogo{
+  width: 300px;
+  height: 300px;
+  /* margin-top: -64px; */
+  /* margin-left: 7px; */
+  background-color: transparent;
+}
+
+.imglogoswap{
+  display: none;
+}
+
+/* Saat Anda mengarahkan mouse ke link navigasi, ubah warnanya */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Posisikan dan style tombol close (pojok kanan atas) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Tombol yang digunakan untuk membuka sidebar */
+.openbtn {
+  font-size: 20px;
+  /* cursor: pointer; */
+  background-color: transparent;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  position: fixed
+
+}
+
+.openbtn:hover {
+  background-color: gray;
+}
+
+/* Style konten halaman - gunakan ini jika Anda ingin mendorong konten halaman ke kanan saat Anda membuka navigasi samping */
+#main {
+  transition: margin-left 0.5s; /* Jika Anda menginginkan efek transisi */
+  font-family: myFirstFont;
+  width: auto;
+  height: auto;
+  /* padding: 20px; */
+}
+
+/* Pada layar yang lebih kecil, yang tingginya kurang dari 450px, ubah style sidenav (lebih sedikit padding dan ukuran font yang lebih kecil) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.kontenglobal{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF0E2;
+  width: auto;
+  height: auto;
+  font-family: myFirstFont;
+}
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 300px; */
+    background-color:#A76B50;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    font-family: myFirstFont;
+  }
+  
+  .kotakfooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    /* margin-left: 300px; */
+  }
+  
+  .CEO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .divceo{
+    background-color: #CAB19B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 370px;
+    height: 160px;
+    margin-top: 10px;
+  }
+  .gambarceo{
+    width: 110px;
+    height: 110px;
+  }
+  
+  .footerinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:left;
+    width: 220px;
+    height: 220px;
+    padding: 15px;
+  }
+  .judulfooter{
+    
+    color: black;
+  }
+  .isifooter{
+    color: #ffffff;
+  }
+  .COPYRIGHT{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: #ffffff;
+    padding-right:10px;
+    padding-bottom: 10px;
+  }
+  
+  .kotakabout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  
+  .gambarfooter{
+    width: 50px;
+    height: auto;
+  }
+  .gambarTwi{
+    width: 50px;
+    height: 40px;
+  }
+  .infofooter{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    width: 220px;
+    height: 220px;
+    padding: 15px;
+  }
+  
+  html,body
+  {
+      width: 100%;
+      /* height: 100%; */
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+  }
+  .namaceo{
+    text-decoration: none;
+    color: black;
+  }
+
+  @media screen and (max-width: 768px){
+    .kotakfooter{
+      font-size: 15px;
+    }
+
+    .namaceo{
+      display: none;
+    }
+
+    .divceo{
+      width: 150px;
+      height: 150px;
+    }
+
+    .gambarfooter{
+      width: 30px;
+      height: auto;
+    }
+
+    .gambarTwi{
+      width: 40px;
+      height: 30px;
+    }
+
+    .COPYRIGHT{
+      font-size: 15px;
+    }
+
+    .imglogo{
+      display: none;
+    }
+    
+    .imglogoswapdiv{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .imglogoswap{
+      padding-top: 50px;
+      padding-bottom: 20px;
+      display: block;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      background-color: transparent;
+    }
+
+    .sidebar a {
+      padding: 6px 8px 6px 8px;
+      /* height: 45px; */
+      text-decoration: none;
+      font-size: 20px;
+      color: #ffffff;
+      display: block;
+      transition: 0.3s;
+    }
+
+  }

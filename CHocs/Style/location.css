@@ -1,0 +1,98 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/Alatsi-Regular.ttf);
+  }
+.locationheader{
+    background-color: #4A756E;
+}
+
+.konten{
+    /* margin-left: 300px; */
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: myFirstFont;
+    background-color: #FFF0E2;
+    padding-bottom: 50px;
+}
+
+.kotakgede{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: center;
+    background-color: #ffffff;
+    padding-right: 35px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    width: auto;
+}
+.kotaktext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: auto;
+    width: 700px;
+}
+.judul {
+    font-size: 48px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.isi{
+    font-size: 24px;
+    color: #777777;
+    padding-bottom: 20px;
+    width: 615px;
+}
+
+.kotakgambar{
+    width: 375px;
+    height: 250px;
+
+}
+
+.gambarlokasi{
+    width: 385px;
+    height: 240px;
+    background-color: transparent;
+}
+
+.cont{
+    font-size: 24px;
+    color: #777777;
+}
+
+.ourlocation{
+    font-size: 48px;
+    padding: 40px;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .kotakgambar{
+        display: none;
+    }
+    .judul{
+        font-size: 20px;
+    }
+    .isi{
+        font-size: 15px;
+    }
+    .cont{
+        font-size: 15px;
+    }
+    .kotaktext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        height: auto;
+        width: auto;
+    }
+  }
